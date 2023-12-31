@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* hide or show if scrolled to the top */
+html[data-scroll="true"] .scroll-show {
+  opacity: 1;
+}
+
+html[data-scroll="true"] .scroll-hide {
+  opacity: 0;
+}
