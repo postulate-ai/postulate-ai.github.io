@@ -12,3 +12,6 @@ tsconfig.tsbuildinfo
 .next
 .cache
 cache
+
+# Mac
+.DS_Store

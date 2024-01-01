@@ -7,8 +7,8 @@ import ExternalAnchor from "../components/external-anchor";
 import Project from "../components/project";
 import StaticImage from "../components/static-image";
 import ThemeButton from "../components/theme-button";
+import splash from "../public/photo-1617791160536-598cf32026fb.avif";
 import postulate from "../public/postulate_ellipses.svg";
-import splash from "../public/sebastian-svenson-LpbyDENbQQg-unsplash.jpg";
 import taptap from "../public/taptapsplash.svg";
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function Hero(): ReactElement {
         className={`h-screen w-full bg-center bg-cover bg-fixed flex justify-center items-center`}
         style={{ backgroundImage: `url(${splash.src})` }}
       >
-        <span className="text-8xl font-bold text-black transition-opacity duration-500 scroll-hide font-[Oswald] select-none">
+        <span className="text-8xl font-bold text-white transition-opacity duration-500 scroll-hide font-[Oswald] select-none">
           postulate
         </span>
       </div>
@@ -69,10 +69,7 @@ export default function Hero(): ReactElement {
             logoSize={128}
             logoBackground="bg-white dark:bg-slate-900"
             name="TapTap**"
-            description={`TapTap** is a communcation app for keeping in contact
-            with loved ones via haptics instead of written language. If you
-            have a modern iOS device, you can join the beta test clicking the
-            link below.`}
+            description={`TapTap** is a mobile app that allows users to send customizable haptic vibrations to people you care about.`}
             buttons={[
               {
                 text: "Join Beta",
@@ -98,14 +95,14 @@ export default function Hero(): ReactElement {
             Hero photo by{" "}
             <ExternalAnchor
               className="hover:text-sky-400"
-              href="https://unsplash.com/@sebastiansvenson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              href="https://unsplash.com/@fakurian?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >
-              Sebastian Svenson
+              Milad Fakurian
             </ExternalAnchor>{" "}
             on{" "}
             <ExternalAnchor
               className="hover:text-sky-400"
-              href="https://unsplash.com/photos/blue-and-white-round-illustration-LpbyDENbQQg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              href="https://unsplash.com/photos/blue-and-green-peacock-feather-58Z17lnVS4U?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
             >
               Unsplash
             </ExternalAnchor>
