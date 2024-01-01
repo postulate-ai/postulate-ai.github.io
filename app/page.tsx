@@ -52,10 +52,10 @@ export default function Hero(): ReactElement {
         </div>
       </div>
       <div
-        className={`h-screen w-full bg-center bg-cover bg-fixed flex justify-center items-center`}
+        className={`h-screen w-full bg-center bg-cover flex justify-center items-center`}
         style={{ backgroundImage: `url(${splash.src})` }}
       >
-        <span className="text-8xl font-bold text-white transition-opacity duration-500 scroll-hide font-[Oswald] select-none">
+        <span className="text-6xl sm:text-8xl font-bold text-white transition-opacity duration-500 scroll-hide font-[Oswald] select-none">
           postulate
         </span>
       </div>
