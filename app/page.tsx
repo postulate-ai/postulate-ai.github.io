@@ -69,10 +69,13 @@ export default function Hero(): ReactElement {
             logoSize={128}
             logoBackground="bg-white dark:bg-slate-900"
             name="TapTap**"
-            description={`TapTap** is a Sarah needs to fill this in.`}
+            description={`TapTap** is a communcation app for keeping in contact
+            with loved ones via haptics instead of written language. If you
+            have a modern iOS device, you can join the beta test clicking the
+            link below.`}
             buttons={[
               {
-                text: "TestFlight",
+                text: "Join Beta",
                 href: "https://testflight.apple.com/join/ZkIL34hh",
                 icon: <GrTest />,
               },

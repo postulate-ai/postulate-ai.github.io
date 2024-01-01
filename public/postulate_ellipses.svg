@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
-   width="48"
-   height="48"
-   viewBox="0 0 12.7 12.7"
+   viewBox="0 0 64 64"
    version="1.1"
    id="svg1"
-   inkscape:version="1.3 (0e150ed, 2023-07-21)"
    sodipodi:docname="postulate_ellipses.svg"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -22,39 +18,21 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     inkscape:zoom="6.6146529"
-     inkscape:cx="36.736622"
-     inkscape:cy="25.549338"
-     inkscape:window-width="1280"
-     inkscape:window-height="891"
-     inkscape:window-x="215"
-     inkscape:window-y="114"
+     inkscape:zoom="3.6875"
+     inkscape:cx="31.864407"
+     inkscape:cy="31.864407"
+     inkscape:window-width="1480"
+     inkscape:window-height="816"
+     inkscape:window-x="168"
+     inkscape:window-y="193"
      inkscape:window-maximized="0"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="svg1" />
   <defs
+     fill="#337ea9"
      id="defs1" />
-  <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <circle
-       style="fill:#0369a1;fill-opacity:1;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round"
-       id="path1"
-       cx="2.595006"
-       cy="6.3499999"
-       r="1.1599878" />
-    <circle
-       style="fill:#0369a1;fill-opacity:1;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round"
-       id="path1-4"
-       cx="6.3499999"
-       cy="6.3499999"
-       r="1.1599878" />
-    <circle
-       style="fill:#0369a1;fill-opacity:1;stroke-width:3.6;stroke-linecap:round;stroke-linejoin:round"
-       id="path1-4-0"
-       cx="10.104994"
-       cy="6.3499999"
-       r="1.1599878" />
-  </g>
+  <path
+     d="m56,32c0,3.31-2.69,6-6,6s-6-2.69-6-6,2.69-6,6-6,6,2.69,6,6Zm-42-6c-3.31,0-6,2.69-6,6s2.69,6,6,6,6-2.69,6-6-2.69-6-6-6Zm18,0c-3.31,0-6,2.69-6,6s2.69,6,6,6,6-2.69,6-6-2.69-6-6-6Z"
+     fill="#337ea9"
+     id="path1"
+     style="fill:#0369a1;fill-opacity:1" />
 </svg>
