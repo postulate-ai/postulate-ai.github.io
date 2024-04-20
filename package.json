@@ -1,23 +1,20 @@
 {
   "private": true,
-  "name": "hafa-next",
+  "name": "postulate",
   "version": "0.1.0",
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "pnpify next build && touch docs/.nojekyll",
-    "fmt": "pnpify prettier --write --cache 'app/**/*.{ts,tsx}' 'components/**/*.{ts,tsx}' 'styles/**/*.css' '*.{json,js,ts}'",
-    "lint": "next lint && pnpify tsc"
+    "dev": "next dev --turbo",
+    "export": "next build && touch docs/.nojekyll",
+    "fmt": "prettier --write --cache 'app/**/*.{ts,tsx}' 'components/**/*.{ts,tsx}' 'styles/**/*.css' '*.{json,js,ts}'",
+    "lint": "tsc && eslint --cache 'app/**/*.{ts,tsx}' 'components/**/*.{ts,tsx}'"
   },
   "devDependencies": {
-    "@babel/core": "^7.23.9",
-    "@types/node": "^20.11.19",
     "@types/react": "^18.2.57",
-    "@yarnpkg/pnpify": "^4.0.1",
-    "acorn": "^8.11.3",
-    "acorn-jsx": "^5.3.2",
     "autoprefixer": "^10.4.17",
-    "eslint": "^8.56.0",
+    "eslint": "^9.1.0",
     "eslint-config-next": "^14.1.0",
+    "eslint-plugin-spellcheck": "^0.0.20",
     "next": "^14.1.0",
     "postcss": "^8.4.35",
     "prettier": "^3.2.5",
@@ -27,28 +24,7 @@
     "react-icons": "^5.0.1",
     "sharp": "^0.33.2",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5.3.3"
-  },
-  "prettier": {
-    "plugins": [
-      "prettier-plugin-organize-imports"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "next",
-      "next/core-web-vitals"
-    ],
-    "rules": {
-      "no-warning-comments": [
-        "error",
-        {
-          "terms": [
-            "fixme"
-          ]
-        }
-      ]
-    }
-  },
-  "packageManager": "yarn@4.1.0"
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.7.0"
+  }
 }

@@ -40,7 +40,7 @@ export default function Hero(): ReactElement {
           <Link href="/">
             <span className="flex items-center">
               <StaticImage
-                src={postulate}
+                src={postulate as string}
                 alt="postulate.ai logo"
                 height={36}
                 width={36}
@@ -65,11 +65,14 @@ export default function Hero(): ReactElement {
         </h2>
         <ul className="px-4 space-y-8 w-full">
           <Project
-            logo={taptap}
+            logo={taptap as string}
             logoSize={128}
             logoBackground="bg-white dark:bg-slate-900"
             name="TapTap**"
-            description={`TapTap** is a mobile app that allows users to send customizable haptic vibrations to people you care about.`}
+            description={
+              // eslint-disable-next-line spellcheck/spell-checker
+              `TapTap** is a mobile app that allows users to send customizable haptic vibrations to people you care about.`
+            }
             buttons={[
               {
                 text: "Join Beta",

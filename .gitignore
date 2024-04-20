@@ -1,17 +1,10 @@
-# node
-.pnp.*
-.yarn/*
-!.yarn/patches
-!.yarn/plugins
-!.yarn/releases
-!.yarn/sdks
-!.yarn/versions
-
 # cache
 tsconfig.tsbuildinfo
+node_modules
 .next
 .cache
 cache
+.eslintcache
 
 # Mac
 .DS_Store

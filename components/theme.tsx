@@ -14,7 +14,9 @@ import {
 // true for dark, false for light, undefined for default
 const ThemeContext = createContext({
   theme: undefined as boolean | undefined,
-  toggleTheme: () => {},
+  toggleTheme: () => {
+    // noop
+  },
 });
 
 export function useTheme(): {
@@ -32,13 +34,17 @@ interface Matcher {
 
 const defaultMatcher: Matcher = {
   matches: false,
-  addEventListener() {},
-  removeEventListener() {},
+  addEventListener() {
+    // noop
+  },
+  removeEventListener() {
+    // noop
+  },
 };
 
 export default function ThemeProvider({
   children,
-}: PropsWithChildren<unknown>): ReactElement {
+}: PropsWithChildren): ReactElement {
   const [theme, setTheme] = useState(undefined as boolean | undefined);
 
   // fetch theme from storage events
@@ -57,7 +63,9 @@ export default function ThemeProvider({
 
     listener();
     window.addEventListener("storage", listener);
-    return () => window.removeEventListener("storage", listener);
+    return () => {
+      window.removeEventListener("storage", listener);
+    };
   }, [setTheme]);
 
   // persist theme
@@ -73,16 +81,19 @@ export default function ThemeProvider({
 
   // set actual dark state that toggles class by watching the media query
   const [matcher, setMatcher] = useState(defaultMatcher);
-  useEffect(
-    () => setMatcher(window.matchMedia("(prefers-color-scheme: dark)")),
-    [setMatcher],
-  );
+  useEffect(() => {
+    setMatcher(window.matchMedia("(prefers-color-scheme: dark)"));
+  }, [setMatcher]);
   const [dark, setDark] = useState(theme ?? matcher.matches);
   useEffect(() => {
     setDark(theme ?? matcher.matches);
-    const listener = () => setDark(theme ?? matcher.matches);
+    const listener = () => {
+      setDark(theme ?? matcher.matches);
+    };
     matcher.addEventListener("change", listener);
-    return () => matcher.removeEventListener("change", listener);
+    return () => {
+      matcher.removeEventListener("change", listener);
+    };
   }, [matcher, theme, setDark]);
   useEffect(() => {
     if (dark) {
